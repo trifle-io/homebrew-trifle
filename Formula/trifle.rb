@@ -5,21 +5,21 @@
 class Trifle < Formula
   desc "CLI for Trifle time-series metrics"
   homepage "https://trifle.io"
-  version "0.7.0"
+  version "0.8.0"
   license "ELv2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.7.0/trifle_0.7.0_darwin_amd64.tar.gz"
-      sha256 "b3df76e58415ca40d7a55d3157049c47f04faa45b113f42f2178d11fc972971d"
+      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.8.0/trifle_0.8.0_darwin_amd64.tar.gz"
+      sha256 "463601438f5c992852286474260f2538182e8ce57d06a5240e3adbdfda612843"
 
       define_method(:install) do
         bin.install "trifle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.7.0/trifle_0.7.0_darwin_arm64.tar.gz"
-      sha256 "d0cd91fcfe67937c13cb5d0b6cb370c0369a05036497b4da87a56a52ad52d1d7"
+      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.8.0/trifle_0.8.0_darwin_arm64.tar.gz"
+      sha256 "156ffa0772330a7a4a4c9bf9d59f1c6e0bd0a5af6fca91c5a92765a0187bd311"
 
       define_method(:install) do
         bin.install "trifle"
@@ -29,15 +29,15 @@ class Trifle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.7.0/trifle_0.7.0_linux_amd64.tar.gz"
-      sha256 "727ba2b279c1843f992cbb804757256325f934b965e9a5360d6c4cc913443bdf"
+      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.8.0/trifle_0.8.0_linux_amd64.tar.gz"
+      sha256 "051ccadca693492875f795abac0fcebad0a728b12b97c14b00f9182d32d34030"
       define_method(:install) do
         bin.install "trifle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.7.0/trifle_0.7.0_linux_arm64.tar.gz"
-      sha256 "a3cad7517f889548e2548c525deedf10d1201e3cfbeecc39aa2e24b908903c45"
+      url "https://github.com/trifle-io/trifle-cli/releases/download/v0.8.0/trifle_0.8.0_linux_arm64.tar.gz"
+      sha256 "a1a585c5d41cbf44b1c630d4be90c5286217f36841e95b274da89fbdd8cb0b06"
       define_method(:install) do
         bin.install "trifle"
       end
